@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControleTelaPrincipal">
+   <children>
+      <ImageView disable="true" fitHeight="702.0" fitWidth="1303.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/fundo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgvPercurso_carro00" disable="true" fitHeight="702.0" fitWidth="1303.0" layoutX="-10.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../img/percurso00.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgvPercurso_carro01" disable="true" fitHeight="702.0" fitWidth="1303.0" layoutX="-10.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../img/percurso01.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgvPercurso_carro02" disable="true" fitHeight="702.0" fitWidth="1277.0" layoutX="-10.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../img/percurso02.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgvPercurso_carro03" disable="true" fitHeight="702.0" fitWidth="1303.0" layoutX="-14.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../img/percurso03.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgvPercurso_carro04" disable="true" fitHeight="698.0" fitWidth="1303.0" layoutX="-11.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../img/percurso04.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgvPercurso_carro05" fitHeight="702.0" fitWidth="1303.0" layoutX="-13.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../img/percurso05.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgvPercurso_carro06" disable="true" fitHeight="702.0" fitWidth="1303.0" layoutX="-16.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../img/percurso06.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgvPercurso_carro07" disable="true" fitHeight="702.0" fitWidth="1303.0" layoutX="-15.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../img/percurso07.png" />
+         </image>
+      </ImageView>
+      <CheckBox fx:id="btnExibirPercurso_carro00" layoutX="11.0" layoutY="100.0" mnemonicParsing="false" onAction="#acaoBtn_ExibirPercurso_Carro00" prefHeight="32.0" prefWidth="137.0" text="Exibir percurso" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></CheckBox>
+      <Button fx:id="btnPararRetomar_carro00" alignment="CENTER" layoutX="163.0" layoutY="100.0" mnemonicParsing="false" onAction="#acaoBtn_Parar_Retomar_Carro00" prefHeight="34.0" prefWidth="85.0" text="Parar">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="btnIniciar" layoutX="75.0" layoutY="328.0" mnemonicParsing="false" onAction="#acaoBtn_Iniciar" prefHeight="42.0" prefWidth="131.0" text="Iniciar Simulacao">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label fx:id="painelVelocidade_carro00" alignment="CENTER" layoutX="90.0" layoutY="20.0" prefHeight="17.0" prefWidth="168.0" text="Parado." textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font></Label>
+      <CheckBox fx:id="btnExibirPercurso_carro01" layoutX="11.0" layoutY="244.0" mnemonicParsing="false" onAction="#acaoBtn_ExibirPercurso_Carro01" prefHeight="32.0" prefWidth="137.0" text="Exibir percurso">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+      <Button fx:id="btnPararRetomar_carro01" alignment="CENTER" layoutX="163.0" layoutY="244.0" mnemonicParsing="false" onAction="#acaoBtn_Parar_Retomar_Carro01" prefHeight="34.0" prefWidth="85.0" text="Parar">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="painelVelocidade_carro01" alignment="CENTER" layoutX="90.0" layoutY="164.0" prefHeight="17.0" prefWidth="168.0" text="Parado.">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="btnExibirPercurso_carro02" layoutX="11.0" layoutY="508.0" mnemonicParsing="false" onAction="#acaoBtn_ExibirPercurso_Carro02" prefHeight="32.0" prefWidth="137.0" text="Exibir percurso" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+      <Button fx:id="btnPararRetomar_carro02" alignment="CENTER" layoutX="163.0" layoutY="508.0" mnemonicParsing="false" onAction="#acaoBtn_Parar_Retomar_Carro02" prefHeight="34.0" prefWidth="85.0" text="Parar">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="painelVelocidade_carro02" alignment="CENTER" layoutX="90.0" layoutY="428.0" prefHeight="17.0" prefWidth="168.0" text="Parado." textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="btnExibirPercurso_carro03" layoutX="11.0" layoutY="652.0" mnemonicParsing="false" onAction="#acaoBtn_ExibirPercurso_Carro03" prefHeight="32.0" prefWidth="137.0" text="Exibir percurso" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+      <Button fx:id="btnPararRetomar_carro03" alignment="CENTER" layoutX="163.0" layoutY="652.0" mnemonicParsing="false" onAction="#acaoBtn_Parar_Retomar_Carro03" prefHeight="34.0" prefWidth="85.0" text="Parar">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="painelVelocidade_carro03" alignment="CENTER" layoutX="90.0" layoutY="573.0" prefHeight="17.0" prefWidth="168.0" text="Parado." textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="btnExibirPercurso_carro04" layoutX="1135.0" layoutY="100.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#acaoBtn_ExibirPercurso_Carro04" prefHeight="32.0" prefWidth="137.0" text="Exibir percurso" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+      <Button fx:id="btnPararRetomar_carro04" alignment="CENTER" layoutX="1041.0" layoutY="100.0" mnemonicParsing="false" onAction="#acaoBtn_Parar_Retomar_Carro04" prefHeight="34.0" prefWidth="85.0" text="Parar">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="painelVelocidade_carro04" alignment="CENTER" layoutX="1027.0" layoutY="20.0" prefHeight="17.0" prefWidth="168.0" text="Parado." textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="btnExibirPercurso_carro05" layoutX="1132.0" layoutY="244.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#acaoBtn_ExibirPercurso_Carro05" prefHeight="32.0" prefWidth="137.0" text="Exibir percurso" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+      <Button fx:id="btnPararRetomar_carro05" alignment="CENTER" layoutX="1041.0" layoutY="244.0" mnemonicParsing="false" onAction="#acaoBtn_Parar_Retomar_Carro05" prefHeight="34.0" prefWidth="85.0" text="Parar">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="painelVelocidade_carro05" alignment="CENTER" layoutX="1024.0" layoutY="164.0" prefHeight="17.0" prefWidth="168.0" text="Parado." textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="btnExibirPercurso_carro06" layoutX="1132.0" layoutY="508.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#acaoBtn_ExibirPercurso_Carro06" prefHeight="32.0" prefWidth="137.0" text="Exibir percurso" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+      <Button fx:id="btnPararRetomar_carro06" alignment="CENTER" layoutX="1041.0" layoutY="508.0" mnemonicParsing="false" onAction="#acaoBtn_Parar_Retomar_Carro06" prefHeight="34.0" prefWidth="85.0" text="Parar">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="painelVelocidade_carro06" alignment="CENTER" layoutX="1024.0" layoutY="428.0" prefHeight="17.0" prefWidth="168.0" text="Parado." textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="btnExibirPercurso_carro07" layoutX="1131.0" layoutY="652.0" mnemonicParsing="false" nodeOrientation="RIGHT_TO_LEFT" onAction="#acaoBtn_ExibirPercurso_Carro07" prefHeight="32.0" prefWidth="137.0" text="Exibir percurso" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+      <Button fx:id="btnPararRetomar_carro07" alignment="CENTER" layoutX="1041.0" layoutY="652.0" mnemonicParsing="false" onAction="#acaoBtn_Parar_Retomar_Carro07" prefHeight="34.0" prefWidth="85.0" text="Parar">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label fx:id="painelVelocidade_carro07" alignment="CENTER" layoutX="1023.0" layoutY="573.0" prefHeight="17.0" prefWidth="168.0" text="Parado." textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnReiniciar" layoutX="1090.0" layoutY="328.0" mnemonicParsing="false" onAction="#acaoBtn_Reiniciar" prefHeight="42.0" prefWidth="131.0" text="Reiniciar Simulacao">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fx:id="imgvCarro00" fitHeight="68.0" fitWidth="39.0" layoutX="458.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+         <image>
+            <Image url="@../img/carro00.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgvCarro01" fitHeight="68.0" fitWidth="39.0" layoutX="276.0" layoutY="568.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/carro01.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgvCarro02" fitHeight="68.0" fitWidth="39.0" layoutX="640.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@../img/carro02.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgvCarro03" fitHeight="68.0" fitWidth="39.0" layoutX="960.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true" rotate="360.0">
+         <image>
+            <Image url="@../img/carro03.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgvCarro04" fitHeight="68.0" fitWidth="39.0" layoutX="689.0" layoutY="568.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/carro04.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgvCarro05" fitHeight="68.0" fitWidth="39.0" layoutX="960.0" layoutY="568.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/carro05.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgvCarro06" fitHeight="68.0" fitWidth="39.0" layoutX="823.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/carro06.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="imgvCarro07" fitHeight="68.0" fitWidth="39.0" layoutX="318.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+         <image>
+            <Image url="@../img/carro07.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn_DiminuirVel_carro00" alignment="CENTER" layoutX="107.0" layoutY="51.0" mnemonicParsing="false" onAction="#acao_Btn_DiminuirVel_carro00" prefHeight="26.0" prefWidth="22.0" text="-">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btn_AumentarVel_carro00" alignment="CENTER" layoutX="224.0" layoutY="51.0" mnemonicParsing="false" onAction="#acao_Btn_AumentarVel_carro00" prefHeight="26.0" prefWidth="22.0" text="+">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label alignment="CENTER" layoutX="130.0" layoutY="56.0" prefHeight="17.0" prefWidth="93.0" text="Velocidade" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_DiminuirVel_carro01" alignment="CENTER" layoutX="105.0" layoutY="197.0" mnemonicParsing="false" onAction="#acao_Btn_DiminuirVel_carro01" prefHeight="26.0" prefWidth="22.0" text="-">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btn_AumentarVel_carro01" alignment="CENTER" layoutX="222.0" layoutY="197.0" mnemonicParsing="false" onAction="#acao_Btn_AumentarVel_carro01" prefHeight="26.0" prefWidth="22.0" text="+">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label alignment="CENTER" layoutX="128.0" layoutY="202.0" prefHeight="17.0" prefWidth="93.0" text="Velocidade" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_DiminuirVel_carro02" alignment="CENTER" layoutX="104.0" layoutY="463.0" mnemonicParsing="false" onAction="#acao_Btn_DiminuirVel_carro02" prefHeight="26.0" prefWidth="22.0" text="-">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btn_AumentarVel_carro02" alignment="CENTER" layoutX="221.0" layoutY="463.0" mnemonicParsing="false" onAction="#acao_Btn_AumentarVel_carro02" prefHeight="26.0" prefWidth="22.0" text="+">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label alignment="CENTER" layoutX="127.0" layoutY="468.0" prefHeight="17.0" prefWidth="93.0" text="Velocidade" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_DiminuirVel_carro03" alignment="CENTER" layoutX="104.0" layoutY="609.0" mnemonicParsing="false" onAction="#acao_Btn_DiminuirVel_carro03" prefHeight="26.0" prefWidth="22.0" text="-">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btn_AumentarVel_carro03" alignment="CENTER" layoutX="221.0" layoutY="609.0" mnemonicParsing="false" onAction="#acao_Btn_AumentarVel_carro03" prefHeight="26.0" prefWidth="22.0" text="+">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label alignment="CENTER" layoutX="127.0" layoutY="614.0" prefHeight="17.0" prefWidth="93.0" text="Velocidade" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_DiminuirVel_carro04" alignment="CENTER" layoutX="1041.0" layoutY="50.0" mnemonicParsing="false" onAction="#acao_Btn_DiminuirVel_carro04" prefHeight="26.0" prefWidth="22.0" text="-">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btn_AumentarVel_carro04" alignment="CENTER" layoutX="1158.0" layoutY="50.0" mnemonicParsing="false" onAction="#acao_Btn_AumentarVel_carro04" prefHeight="26.0" prefWidth="22.0" text="+">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label alignment="CENTER" layoutX="1064.0" layoutY="55.0" prefHeight="17.0" prefWidth="93.0" text="Velocidade" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_DiminuirVel_carro05" alignment="CENTER" layoutX="1042.0" layoutY="197.0" mnemonicParsing="false" onAction="#acao_Btn_DiminuirVel_carro05" prefHeight="26.0" prefWidth="22.0" text="-">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btn_AumentarVel_carro05" alignment="CENTER" layoutX="1159.0" layoutY="197.0" mnemonicParsing="false" onAction="#acao_Btn_AumentarVel_carro05" prefHeight="26.0" prefWidth="22.0" text="+">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label alignment="CENTER" layoutX="1065.0" layoutY="202.0" prefHeight="17.0" prefWidth="93.0" text="Velocidade" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_DiminuirVel_carro06" alignment="CENTER" layoutX="1043.0" layoutY="460.0" mnemonicParsing="false" onAction="#acao_Btn_DiminuirVel_carro06" prefHeight="26.0" prefWidth="22.0" text="-">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btn_AumentarVel_carro06" alignment="CENTER" layoutX="1160.0" layoutY="460.0" mnemonicParsing="false" onAction="#acao_Btn_AumentarVel_carro06" prefHeight="26.0" prefWidth="22.0" text="+">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label alignment="CENTER" layoutX="1066.0" layoutY="465.0" prefHeight="17.0" prefWidth="93.0" text="Velocidade" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_DiminuirVel_carro07" alignment="CENTER" layoutX="1045.0" layoutY="605.0" mnemonicParsing="false" onAction="#acao_Btn_DiminuirVel_carro07" prefHeight="26.0" prefWidth="22.0" text="-">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btn_AumentarVel_carro07" alignment="CENTER" layoutX="1162.0" layoutY="605.0" mnemonicParsing="false" onAction="#acao_Btn_AumentarVel_carro07" prefHeight="26.0" prefWidth="22.0" text="+">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label alignment="CENTER" layoutX="1068.0" layoutY="610.0" prefHeight="17.0" prefWidth="93.0" text="Velocidade" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
